@@ -1,0 +1,9 @@
+<!doctype html>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>tuisla sign-in</title>
+<body style="font:16px sans-serif;max-width:40em;margin:2em auto;padding:0 1em">
+<h1>Almost done</h1>
+<p>Copy this whole address and paste it into tuisla:</p>
+<textarea id="u" rows="6" style="width:100%" readonly></textarea>
+<p><button onclick="navigator.clipboard.writeText(location.href);this.textContent='Copied'">Copy</button></p>
+<script>document.getElementById('u').value = location.href</script>
